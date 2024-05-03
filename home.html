@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home sweet home</h1>
+    <a href="link.html" id="openLinker">Open linker</a>
+
+    <script>
+      window.name="home"
+      document.getElementById('openLinker').addEventListener('click', e => {
+        e.preventDefault();
+        window.open('link.html', '_blank')
+      })
+    </script>
+</body>
+</html>

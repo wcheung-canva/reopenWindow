@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch to home</title>
+</head>
+<body>
+    <a id="link" href="home">Go home</a>
+
+    <script>
+      document.getElementById('link').addEventListener('click', e => {
+        e.preventDefault();
+        window.open('home.html', 'home');
+      })
+    </script>
+</body>
+</html>
